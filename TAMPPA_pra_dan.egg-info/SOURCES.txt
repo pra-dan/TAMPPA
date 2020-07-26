@@ -1,0 +1,8 @@
+README.md
+setup.py
+TAMPPA_pra_dan.egg-info/PKG-INFO
+TAMPPA_pra_dan.egg-info/SOURCES.txt
+TAMPPA_pra_dan.egg-info/dependency_links.txt
+TAMPPA_pra_dan.egg-info/top_level.txt
+src/__init__.py
+src/tamppa.py
