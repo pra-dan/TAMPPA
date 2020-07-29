@@ -1,7 +1,7 @@
 include README.md
 include LICENSE
 include requirements.txt
-graft src
+graft tamppa
 recursive-exclude * *.py[co]
 include versioneer.py
-include src/_version.py
+include tamppa/_version.py

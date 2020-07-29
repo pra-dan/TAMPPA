@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+TAMPPA.egg-info/PKG-INFO
+TAMPPA.egg-info/SOURCES.txt
+TAMPPA.egg-info/dependency_links.txt
+TAMPPA.egg-info/requires.txt
+TAMPPA.egg-info/top_level.txt
+tamppa/__init__.py
+tamppa/_version.py
+tamppa/tamppa_code.py

@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: TAMPPA-pra-dan
-Version: 0.0.1+0.g141d866.dirty
+Name: TAMPPA
+Version: 0.0.1+5.g95ef1d3
 Summary: Timing And Memory Profile Parser
 Home-page: https://github.com/pra-dan/TAMPPA
 Author: Prashant Dandriyal
@@ -11,6 +11,13 @@ Description: # Example Package
         This is a simple example package. You can use
         [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
         to write your content.
+        
+        ## References
+        * [How to use GitHub as a PyPi server](https://www.freecodecamp.org/news/how-to-use-github-as-a-pypi-server-1c3b0d07db2/)
+        
+        * [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/)
+        
+        * [Detailed Package development guide by Jacob Tomlinson](https://www.jacobtomlinson.co.uk/posts/2020/creating-an-open-source-python-project-from-scratch/)
         
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
