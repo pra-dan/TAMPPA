@@ -1,3 +1,5 @@
+![banner](https://github.com/pra-dan/TAMPPA/blob/master/resources/banner1.png)
+
 # TAMPPA: Time And Memory Profile PArser
 
 ---
@@ -119,6 +121,7 @@ On successful execution, the lonely directory is populated as
 ```
 
 Additionally, a plot is also generated as
+
 ![mem_res](https://github.com/pra-dan/TAMPPA/blob/master/resources/mem_res.png)
 
 ## TODOs:
