@@ -7,7 +7,7 @@ with open("requirements.txt", "r") as fh:
     requirements = [line.strip() for line in fh]
 
 setuptools.setup(
-    name="TAMPPA-pra-dan",
+    name="TAMPPA",
     #version=versioneer.get_version(),
     version="0.0.1",
     #cmdclass=versioneer.get_cmdclass(),

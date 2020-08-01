@@ -144,7 +144,7 @@ Description: # TAMPPA: Time And Memory Profile PArser
 Keywords: memory,parsing,parser,timing,timer,profiling,profiler,line_profiler
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: MPL License
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
