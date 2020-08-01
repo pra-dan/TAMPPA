@@ -16,3 +16,7 @@ TAMPPA is a supporting package for the popular profilers
 [] Add flags to toggle plots for both parsers.
 
 []
+
+
+## References:
+[Jacob Tomlinson's Blogs](https://www.jacobtomlinson.co.uk/series/creating-an-open-source-python-project-from-scratch/)
