@@ -49,7 +49,7 @@ $ python -m memory_profiler mainm.py > mem_res_1.txt
 ## Installation
 Any particular release can be installed using `pip`:
 ```python3
-$ pip install tamppa
+$ pip install TAMPPA
 ```
 
 To enter development mode,
