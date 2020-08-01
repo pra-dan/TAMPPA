@@ -1,4 +1,4 @@
-# tampa.py
+# tamppa_code_mem.py
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -8,6 +8,9 @@ only_functions_lines = []
 
 
 def toDataframe(txtfile_path):
+    """
+    Parses stats from the .txt file and converts it to a pandas dataframe.
+    """
     f = open(txtfile_path, "r")
     txt = f.read()
 
@@ -62,8 +65,20 @@ def toDataframe(txtfile_path):
     total_lines = len(df["Line #"])
     return only_functions_df, df
 
+def writeFuncNamesTXT(only_functions_df):
+    """
+    Generates a text file of all the functions (names)
+    """
+    with open("func_names.txt", "w") as f:
+        for item in func_names:
+            f.write("%s\n" % item)
+
+    only_functions_df.to_csv("function_wise_time_results.csv")
 
 def toCSV(df):
+    """
+    Converts the extracted stats from the dataframe to .csv
+    """
     split_idx = df[df["Line Contents"].str.startswith("def")].index
 
     index_collector_list = list()
@@ -87,16 +102,10 @@ def toCSV(df):
         i.to_csv(next(fn) + "_mem_.csv")
 
 
-def writeFuncNamesTXT(only_functions_df):
-    with open("func_names.txt", "w") as f:
-        for item in func_names:
-            f.write("%s\n" % item)
-
-    only_functions_df.to_csv("function_wise_time_results.csv")
-
-
 def decode():
-    # Decoding
+    """
+    Demonstrates how to use the results. Optional Plotting
+    """
     fun = open("func_names.txt", "r")
     df_names = [f.split("\n")[0] + "_mem_.csv" for f in fun]
     # print(df_names)
@@ -122,6 +131,9 @@ def decode():
 
 
 def mem_parse(txtfile_path):
+    """
+    Driver Function
+    """
     only_functions_df, df = toDataframe(txtfile_path)
     toCSV(df)
     writeFuncNamesTXT(only_functions_df)
