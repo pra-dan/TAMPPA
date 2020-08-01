@@ -12,10 +12,12 @@ setuptools.setup(
     cmdclass=versioneer.get_cmdclass(),
     author="Prashant Dandriyal",
     author_email="prashantdandriyal7@gmail.com",
-    description="Timing And Memory Profile Parser",
+    description="Time And Memory Profile Parser",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pra-dan/TAMPPA",
+    license="BSD",
+    keywords=['memory','parsing','parser','timing', 'timer', 'profiling', 'profiler', 'line_profiler'],
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
