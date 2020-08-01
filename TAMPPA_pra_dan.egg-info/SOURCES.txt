@@ -15,4 +15,5 @@ src/_version.py
 src/tamppa.py
 tamppa/__init__.py
 tamppa/_version.py
-tamppa/tamppa_code.py
+tamppa/tamppa_code_mem.py
+tamppa/tamppa_code_tim.py
