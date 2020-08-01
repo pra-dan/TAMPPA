@@ -96,9 +96,9 @@ def toCSV(df):
     fn = iter(func_names)
 
     for i in dataframes:
-        print("===")
+        #print("===")
         i = i.iloc[2:]
-        print(i)
+        #print(i)
         i.to_csv(next(fn) + "_mem_.csv")
 
 
