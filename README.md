@@ -143,4 +143,7 @@ Additionally, a plot is also generated as
 []
 
 ## References:
-[Jacob Tomlinson's Blogs](https://www.jacobtomlinson.co.uk/series/creating-an-open-source-python-project-from-scratch/)
+
+* [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/)
+
+* [Jacob Tomlinson's Blogs](https://www.jacobtomlinson.co.uk/series/creating-an-open-source-python-project-from-scratch/)
