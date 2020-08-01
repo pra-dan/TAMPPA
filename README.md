@@ -1,5 +1,3 @@
-![banner](https://github.com/pra-dan/TAMPPA/blob/master/resources/banner.png)
-
 # TAMPPA: Time And Memory Profile PArser
 
 ---
@@ -14,7 +12,7 @@ TAMPPA is a supporting package for the popular profilers
 
 Both the packages do an excellent job by providing profiling results on the terminal.
 
-```bash
+```python3
 Total time: 0.181071 s
 File: main.py
 Function: linearRegressionfit at line 35
@@ -42,7 +40,7 @@ This is exactly what **TAMPPA** does ! It outputs one `.csv` file per function a
 
 * Run both the profilers or the profiler whose results you need as a `csv`, and save the logs on the console to a `.txt` file. For e.g saving the memory profiling results of the python application `mainm.py` and saving the results to `mem_res_1.txt`
 
-```bash
+```python3
 $ python -m memory_profiler mainm.py > mem_res_1.txt
 ```
 
@@ -50,12 +48,12 @@ $ python -m memory_profiler mainm.py > mem_res_1.txt
 
 ## Installation
 Any particular release can be installed using `pip`:
-```bash
+```python3
 $ pip install tamppa
 ```
 
 To enter development mode,
-```bash
+```python3
 $ git clone https://github.com/pra-dan/TAMPPA.git
 ```
 ## Usage
@@ -63,20 +61,20 @@ Refer to the following once the Installation is over.
 
 ### Time Profile Parser
 Initially, if we have only the `.txt` file.
-```bash
+```python3
 .
 └── tim_prof_results.txt
 0 directories, 1 file
 ```
 
 Run `tim_parse` or time parser, in a Python environment (`$ python`)
-```bash
+```python3
 >>> from tamppa import tim_parse
 >>> tim_parse("tim_prof_results.txt")
 ```
 
 On successful execution, the lonely directory is populated as
-```bash
+```python3
 .
 ├── again_func_names.txt
 ├── import_data_tim_.csv
@@ -93,7 +91,7 @@ Additionally, a plot is also generated as
 
 ### Memory Profile Parser
 Similarly, if we have only the `.txt` file for the `memory_profiler`.
-```bash
+```python3
 .
 └── mem_res_1.txt
 
@@ -101,13 +99,13 @@ Similarly, if we have only the `.txt` file for the `memory_profiler`.
 ```
 
 Run `mem_parse` or time parser, in a Python environment (`$ python`)
-```bash
+```python3
 >>> from tamppa import mem_parse
 >>> mem_parse("mem_res_1.txt")
 ```
 
 On successful execution, the lonely directory is populated as
-```bash
+```python3
 .
 ├── func_names.txt
 ├── function_wise_time_results.csv
@@ -124,9 +122,9 @@ Additionally, a plot is also generated as
 ![mem_res](https://github.com/pra-dan/TAMPPA/blob/master/resources/mem_res.png)
 
 ## TODOs:
-- [] Provide the entire package a executable-like interface; such that the parsers can be called simply as `$ mem_parse file.txt -plot true`
+- [ ] (Provide the entire package a executable-like interface; such that the parsers can be called simply as `$ mem_parse file.txt -plot true`)
 
-- [] Add flags to toggle plots for both parsers.
+- [ ] (Add flags to toggle plots for both parsers)
 
 
 ## References:
