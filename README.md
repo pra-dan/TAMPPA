@@ -31,15 +31,16 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
     42         1       3242.0   3242.0      8.4      print("test Accuracy",lr.score(Xts,Yts))
 ```
 
-But, there seems to be no method to get these stats in a exportable file that can be used with flexibility. 
+But, there seems to be no method to get these stats in a exportable file that can be used with flexibility.
 
-On dumping the logs to a `.txt` file still requires an individual to parse data from the text by self and then convert the content into a `.csv` file; which is a common format for sharing statistical data and plotting using MATPLOTLIB. 
+On dumping the logs to a `.txt` file still requires an individual to parse data from the text by self and then convert the content into a `.csv` file; which is a common format for sharing statistical data and plotting using MATPLOTLIB.
 
 This is exactly what **TAMPPA** does ! It outputs one `.csv` file per function and another text file `func_names.txt` and `again_func_names.txt` for accessing these files easily.
 
 ## Pre-requisites:
 **Note: Both the parsers need a .txt file to parse results from**
 
+* The package has been tested on `memory-profiler==0.60.0` and `line-profiler==2.1.1` and tries to replace existing versions with these. So **its advisable to use a virtualenv or a conda env**.
 * Run both the profilers or the profiler whose results you need as a `csv`, and save the logs on the console to a `.txt` file. For e.g saving the memory profiling results of the python application `mainm.py` and saving the results to `mem_res_1.txt`
 
 ```python3
@@ -57,6 +58,7 @@ $ pip install TAMPPA
 To enter development mode,
 ```python3
 $ git clone https://github.com/pra-dan/TAMPPA.git
+$ pip3 install -e TAMPPA
 ```
 ## Usage
 Refer to the following once the Installation is over.
@@ -129,6 +131,10 @@ Additionally, a plot is also generated as
 
 - [ ] (Add flags to toggle plots for both parsers)
 
+## Changelog:
+- `0.2`:
+    - Adds line numbers as labels to scatter plot on `mem_parse`; relating to issue #3.
+    - Corrects inconsistent Y axis values to stay ascending.
 
 ## References:
 

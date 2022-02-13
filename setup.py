@@ -8,9 +8,9 @@ with open("requirements.txt", "r") as fh:
 
 setuptools.setup(
     name="TAMPPA",
-    #version=versioneer.get_version(),
+    version=versioneer.get_version(),
     version="0.0.1",
-    #cmdclass=versioneer.get_cmdclass(),
+    cmdclass=versioneer.get_cmdclass(),
     author="Prashant Dandriyal",
     author_email="prashantdandriyal7@gmail.com",
     description="Time And Memory Profile Parser",

@@ -1,2 +1,4 @@
 matplotlib
 pandas
+line-profiler==2.1.1
+memory-profiler==0.60.0

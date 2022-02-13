@@ -1,4 +1,5 @@
 # tamppa_code_mem.py
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -119,13 +120,18 @@ def decode():
     plt.grid()
     plt.title("Memory Profiling Results")
     plt.xlabel("Line #")
-    plt.ylabel("Memory Usage")
+    plt.ylabel("Memory Usage (in MiB)")
 
     for idx, df in enumerate(dfs):
+        # split 116 MiB to separate columns: 116 and MiB
+        mbs_float = df["Mem usage"].str.split(' ',expand=True)[0].astype(np.float)
         plt.scatter(
-            df["Line #"], df["Mem usage"], color=color_palette[idx % len(color_palette)]
-        )
-        plt.plot(df["Line #"], df["Mem usage"], color_palette[idx % len(color_palette)])
+            df["Line #"], mbs_float,
+             color=color_palette[idx % len(color_palette)])
+        plt.plot(
+            df["Line #"], mbs_float, color_palette[idx % len(color_palette)])
+        for i, label in enumerate(df["Line #"]):
+            plt.annotate(label, (df["Line #"][i], mbs_float[i]))
 
     plt.show()
 

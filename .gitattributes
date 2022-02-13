@@ -1,1 +1,2 @@
 src/_version.py export-subst
+tamppa/_version.py export-subst
