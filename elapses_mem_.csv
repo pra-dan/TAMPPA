@@ -1,9 +1,0 @@
-,Line #,Mem usage,Increment,Line Contents
-9,39,116.4 MiB,0.0 MiB,dtype=object)
-10,40,116.7 MiB,0.3 MiB,c)
-11,42,116.7 MiB,0.0 MiB,enumerate(d):
-12,43,116.7 MiB,0.0 MiB,j)
-13,44,116.7 MiB,0.0 MiB,np.sum(operate_[in_bool])
-14,45,116.7 MiB,0.0 MiB,operate_[np.invert(in_bool)]
-15,46,116.7 MiB,0.0 MiB,e[np.invert(in_bool)]
-16,48,116.7 MiB,0.0 MiB,elaps
