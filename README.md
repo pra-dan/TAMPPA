@@ -132,7 +132,7 @@ Additionally, a plot is also generated as
 - [ ] (Add flags to toggle plots for both parsers)
 
 ## Changelog:
-- `0.2`:
+- `0.1`:
     - Adds line numbers as labels to scatter plot on `mem_parse`; relating to issue #3.
     - Corrects inconsistent Y axis values to stay ascending.
 
